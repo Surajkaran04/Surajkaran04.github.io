@@ -1,0 +1,482 @@
+
+@import url("fonts.css");
+html {
+	font-size: 10px;
+}
+
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #073042;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 1.7rem;
+	line-height: 3rem;
+	color: #6e6e6e;
+}
+
+/**
+* links - (_document-setup.scss)
+* -------------------------------------------------------------------
+*/
+a, a:visited {
+	color: #FFFFFF;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus, a:active {
+	color: #4285f4;
+	outline: 0;
+}
+
+/**
+* ===================================================================
+* 03. typography & general theme styles - (_document-setup.scss)
+*
+* -------------------------------------------------------------------
+*/
+h1, h5, h6, .h01, .h03, .h05, .h06 {
+	font-family: "poppins-semibold", sans-serif;
+	color: #313131;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 2.1rem;
+}
+h5, .h05, h6, .h06 {
+	font-family: "poppins-semibold";
+	margin-bottom: 1.2rem;
+}
+h1, .h01 {
+	font-size: 3.1rem;
+	line-height: 1.355;
+	letter-spacing: -.1rem;
+}
+@media only screen and (max-width:600px) {
+	h1, .h01 {
+		font-size: 2.6rem;
+		letter-spacing: -.07rem;
+	}
+}
+h5, .h05 {
+	font-size: 1.4rem;
+	line-height: 1.714;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+h6, .h06 {
+	font-size: 0.8rem;
+	line-height: 1.714;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+
+
+/**
+* ===================================================================
+* 10. intro - (_layout.scss)
+*
+* -------------------------------------------------------------------
+*/
+#intro {
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+#intro-books {
+	width: 100%;
+	flex: 1;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+#intro-youtube {
+	width: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+.section-two {
+	margin-bottom: 40px;
+}
+
+.profile-image {
+	border-radius: 50%;
+}
+
+.intro-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transform: translateY(-2.1rem);
+	-ms-transform: translateY(-2.1rem);
+	transform: translateY(-2.1rem);
+}
+
+.intro-content h1 {
+	color: #FFFFFF;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 8.4rem;
+	line-height: 1.071;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: .6rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.intro-content h5 {
+	color: #3ddc84;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 2.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.intro-content h6 {
+	color: #3ddc84;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.565;
+  margin-top: 20px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.article-head h5 {
+	color: #3ddc84;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 2.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.books-head h5 {
+	color: #3ddc84;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 2.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.intro-content .intro-position {
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.intro-content .intro-position {
+	margin-bottom: 3rem;
+}
+.intro-content .intro-position span {
+	display: inline-block;
+}
+.intro-content .intro-position span:first-child::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	top: -25px;
+	bottom: -2px;
+	padding-left: 507px;
+	padding-right: -2px;
+	z-index: -2;
+	color: rgba(255, 255, 255, 0.3);
+
+}
+.intro-content .intro-position span:first-child::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: rgba(255, 255, 255, 0.3);
+
+}
+
+.intro-social {
+	display: block;
+	position: inherit;
+	width: 100%;
+	left: 0;
+	font-size: 3.3rem;
+	margin: 3% 0% 0% 0%;
+	padding: 0;
+}
+.intro-social li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+.intro-social li a, .intro-social li a:visited {
+	color: #FFFFFF;
+}
+.intro-social li a:hover, .intro-social li a:focus {
+	color: #4285f4;
+}
+
+.intro-books {
+	margin: 20px;
+	font-size: 2.3rem;
+}
+.intro-books li {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+	margin: 40px;
+}
+.intro-books li a, .intro-books li a:visited {
+	color: #FFFFFF;
+}
+.intro-books li a:hover, .intro-books li a:focus {
+	color: #4285f4;
+}
+
+
+.box-masonry {
+	background: #151515;
+	position: relative;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 2rem;
+}
+.box-masonry h4 {
+	color: #3ddc84;
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 2.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+/**
+* responsive:
+* Intro
+* ---------------------------------------------------------------
+*/
+@media only screen and (max-width:1024px) {
+	.intro-content h1 {
+		font-size: 7.6rem;
+	}
+	.intro-social {
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+		font-size: 3rem;
+		padding: 0;
+margin-top: 10px;
+	}
+
+	.intro-guide {
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+		font-size: 3rem;
+		padding: 0;
+margin-top: 10px;
+	}
+
+	.intro-books {
+		font-size: 3rem;
+	}
+	.intro-books li {
+		margin: 35px;
+	}
+}
+@media only screen and (max-width:768px) {
+	#intro {
+		min-height: 660px;
+	}
+	#intro-youtube {
+		min-height: 660px;
+	}
+	.intro-content h1 {
+		font-size: 5.2rem;
+	}
+	.intro-content h5 {
+		font-size: 1.8rem;
+	}
+	.article-head h5 {
+		font-size: 1.8rem;
+	}
+	.books-head h5 {
+		font-size: 1.8rem;
+	}
+	.intro-content .intro-position {
+		font-size: 1.3rem;
+	}
+	.intro-social {
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+		font-size: 2.5rem;
+		padding: 0;
+margin-top: 10px;
+	}
+	.intro-guide {
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+		font-size: 2.5rem;
+		padding: 0;
+margin-top: 10px;
+	}
+.intro-social li {
+  line-height: 50px;
+}
+
+.intro-guide li {
+	line-height: 50px;
+  }
+
+	.intro-books {
+		font-size: 2.5rem;
+	}
+	.intro-books li {
+		margin: 20px;
+	}
+}
+@media only screen and (max-width:600px) {
+	#intro {
+		min-height: 600px;
+	}
+	#intro-youtube {
+		min-height: 600px;
+	}
+	.intro-content h1 {
+		font-size: 4.6rem;
+		margin-bottom: .6rem;
+	}
+	.intro-content h5 {
+		font-size: 1.5rem;
+		margin-bottom: .3rem;
+		letter-spacing: .2rem;
+	}
+	.intro-content h6 {
+		font-size: 1.3rem;
+		margin-bottom: .3rem;
+		letter-spacing: .2rem;
+	}
+	.article-head h5 {
+		font-size: 1.5rem;
+		margin-bottom: .3rem;
+		letter-spacing: .2rem;
+	}
+	.books-head h5 {
+		font-size: 1.5rem;
+		margin-bottom: .3rem;
+		letter-spacing: .2rem;
+	}
+	.intro-content .intro-position {
+		font-size: 1.2rem;
+	}
+	.intro-content .intro-position span {
+		padding: 0 .6rem;
+	}
+	.intro-content .intro-position span::before, .intro-content .intro-position span::after {
+		display: none !important;
+	}
+	.intro-social {
+		font-size: 2.4rem;
+margin-top: 10px;
+	}
+	.intro-social li {
+	  line-height: 50px;
+	}
+	.intro-guide {
+		font-size: 2.4rem;
+margin-top: 10px;
+	}
+	.intro-guide li {
+	  line-height: 50px;
+	}
+	.intro-books {
+		font-size: 1.4rem;
+	}
+}
+
+.main{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cards_item {
+	display: flex;
+	padding: 1rem;
+}
+@media (min-width: 40rem) {
+	.cards_item {
+		width: 50%;
+	}
+}
+@media (min-width: 56rem) {
+	.cards_item {
+		width: 33.3333%;
+	}
+}
+.card {
+	background-color: white;
+	border-radius: 0.25rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100%;
+}
+.container {
+	padding: 2px 16px;
+}
+.card_image img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.container h3 {
+	color: #000;
+	letter-spacing: 0.5px;
+	margin-bottom: 1.25rem;
+	margin-top: 1rem;
+}
